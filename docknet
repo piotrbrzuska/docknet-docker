@@ -11,4 +11,4 @@ mkdir -p ~/.nuget
 docker run --rm -v="${PWD}:/${DN_NAME}" \
     -v "${HOME}/.local/share/NuGet:/root/.local/share/NuGet" \
     -v "${HOME}/.nuget:/root/.nuget" \
-    -w="/${DN_NAME}"  rendlelabs/docknet $@
+    -w="/${DN_NAME}"  piotrbrzuska/docknet-docker $@

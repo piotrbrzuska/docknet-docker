@@ -1,12 +1,28 @@
+# docknet-docker - a docker proxy for dotnet
+
+This is a proxy for Microsoft dotnet for unsupported platforms.
+
+Proxy based on docker platform: it use docker image (https://hub.docker.com/r/microsoft/dotnet/) released by Microsoft.
+
+Tested on:
+* Arch linux 
+
+let me know if your system is running or not!
+
+
+**based on** https://github.com/RendleLabs/docknet-docker
+
+Original readme.md:
+
 # docknet-docker
 A Docker image for using the dotnet CLI and CoreRT on any(?) Linux
+
 
 ## TL;DR
 
 1. Copy the `docknet` script to somewhere on your path (and make sure it's executable).
 2. Create a directory (on the host) for your app and `cd` into it.
 3. Use `docknet` instead of `dotnet`.
-
 ## Why is this?
 
 Right now, [CoreRT](https://github.com/dotnet/corert) and [the .NET CLI](https://github.com/dotnet/cli) only work on a limited range of Linux distros.
